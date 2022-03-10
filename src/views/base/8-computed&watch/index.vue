@@ -32,9 +32,13 @@
   const wNum2 = ref(2);
   const wSum = ref(3);
 
-  watch([wNum1, wNum2], (val, oldVal) => {
-    wSum.value = val[0] + val[1];
-  });
+  watch(
+    [wNum1, wNum2],
+    (val, oldVal) => {
+      wSum.value = val[0] + val[1];
+    },
+    { immediate: true, deep: true } // 立即检测、深度检测，如果需要就添加
+  );
 &lt;/script&gt;
             </code>
         </pre>
@@ -92,9 +96,13 @@ const wNum1 = ref(1);
 const wNum2 = ref(2);
 const wSum = ref(3);
 
-watch([wNum1, wNum2], (val, oldVal) => {
-  wSum.value = val[0] + val[1];
-});
+watch(
+  [wNum1, wNum2],
+  (val, oldVal) => {
+    wSum.value = val[0] + val[1];
+  },
+  { immediate: true, deep: true } // 立即检测、深度检测，如果需要就添加
+);
 
 const cNum1 = ref(1);
 const cNum2 = ref(2);
