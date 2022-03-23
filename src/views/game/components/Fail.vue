@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, getCurrentInstance, computed, watch, onMounted } from "vue";
+import { ref, computed, onMounted } from "vue";
 import loadsh from "lodash";
 import { useStore } from "vuex";
 const store = useStore();

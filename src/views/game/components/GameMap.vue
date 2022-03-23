@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, getCurrentInstance, computed, onMounted } from "vue";
+import { computed } from "vue";
 import Floor from "./Floor";
 import Figure from "./Figure";
 import Enemy from "./Enemy";

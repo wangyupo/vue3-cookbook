@@ -5,16 +5,33 @@
 </template>
 
 <script setup>
-import { ref, reactive, getCurrentInstance, computed, onMounted, watch } from "vue";
-import { useRouter, useRoute, onBeforeRouteLeave, onBeforeRouteUpdate } from "vue-router";
+import { ref, computed, onMounted, watch } from "vue";
+import { onBeforeRouteLeave } from "vue-router";
 import { useStore } from "vuex";
 const store = useStore();
 
 const jumpUp = ref(null);
 const jumpDown = ref(null);
+const jumpHeight = ref(600);
+const jumpPoor = ref(100);
 const brick = computed(() => store.state.game.brick);
 const figure = computed(() => store.state.game.figure);
 const game = computed(() => store.state.game.game);
+
+watch(
+  game,
+  (val) => {
+    if (!val.start) {
+      jumpHeight.value = 600;
+    } else {
+      if (jumpHeight.value <= 200) {
+        jumpPoor.value = 10;
+      }
+      jumpHeight.value = jumpHeight.value - jumpPoor.value;
+    }
+  },
+  { deep: true }
+);
 
 const figureJump = () => {
   figure.value.bottom += figure.value.speed;
@@ -43,7 +60,7 @@ const moveFn = (e) => {
       cancelAnimationFrame(jumpUp.value);
       jumpUp.value = null;
       jumpDown.value = requestAnimationFrame(figureDown);
-    }, 300);
+    }, jumpHeight.value);
   }
 };
 

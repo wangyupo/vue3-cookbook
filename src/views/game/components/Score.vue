@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, getCurrentInstance, computed, watch, onMounted } from "vue";
+import { computed } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
 
@@ -18,7 +18,5 @@ const game = computed(() => store.state.game.game);
   position: absolute;
   top: 10px;
   right: 20px;
-  // left: 50%;
-  // transform: translateX(-50%);
 }
 </style>

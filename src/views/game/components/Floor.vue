@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { reactive, onMounted, computed, watch } from "vue";
+import { onMounted, computed, watch } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
 

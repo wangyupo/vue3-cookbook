@@ -8,8 +8,8 @@
 
 <script setup>
 import Map from "./components/GameMap.vue";
-import { ref, reactive, onMounted, computed, watch } from "vue";
-import { useRouter, useRoute, onBeforeRouteLeave, onBeforeRouteUpdate } from "vue-router";
+import { ref, onMounted, computed } from "vue";
+import { onBeforeRouteLeave } from "vue-router";
 import loadsh from "lodash";
 import { useStore } from "vuex";
 const store = useStore();

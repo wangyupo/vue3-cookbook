@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, getCurrentInstance, computed, watch, onMounted } from "vue";
+import { computed } from "vue";
 import { useStore } from "vuex";
 const store = useStore();
 
