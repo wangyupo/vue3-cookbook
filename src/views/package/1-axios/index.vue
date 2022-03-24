@@ -80,6 +80,21 @@
       });
   };
 
+
+  // async await 使用示例
+  // const handleHttpAsync = async() => {
+  //   await appContext.config.globalProperties.$axios
+  //     .get("/api/dict/word", {
+  //       params: {
+  //         word: word.value,
+  //       },
+  //     })
+  //     .then(function (response) {
+  //     })
+  //     .catch(function (error) {
+  //    });
+  // };
+
   onMounted(() => {
     handleHttp();
   });
