@@ -11,6 +11,8 @@
 &lt;/template&gt;
 
 &lt;script setup&gt;
+  import { ElMessageBox } from "element-plus";
+  
   const handleBtn = () => {
     alert("你触发了点击事件！");
   };
@@ -41,8 +43,6 @@
 </template>
 
 <script setup>
-import { ElMessageBox } from "element-plus";
-
 const handleBtn = () => {
   alert("你触发了点击事件！");
 };
