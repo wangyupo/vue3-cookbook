@@ -23,7 +23,9 @@ watch(
   (val) => {
     if (!val.start) {
       jumpHeight.value = 600;
+      jumpPoor.value = 100;
     } else {
+      if (val.score === 0) return
       if (jumpHeight.value <= 200) {
         jumpPoor.value = 10;
       }
