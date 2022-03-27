@@ -2,10 +2,12 @@ const menus = [
   {
     path: "/begin",
     title: "从这儿开始",
+    icon: "ship"
   },
   {
     title: "基础学习",
     path: "/base",
+    icon: "bicycle",
     children: [
       {
         path: "/base/1-setup",
@@ -52,6 +54,7 @@ const menus = [
   {
     title: "第三方包学习",
     path: "/package",
+    icon: "van",
     children: [
       {
         path: "/package/1-axios",
@@ -74,10 +77,12 @@ const menus = [
   {
     path: "/game",
     title: "做个项目",
+    icon: "set-up"
   },
   {
     path: "/end",
     title: "在这儿结束",
+    icon: "switch-button"
   },
 ];
 
