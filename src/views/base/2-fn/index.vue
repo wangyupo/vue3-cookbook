@@ -12,14 +12,14 @@
 
 &lt;script setup&gt;
   import { ElMessageBox } from "element-plus";
-  
+
   const handleBtn = () => {
     alert("你触发了点击事件！");
   };
 
   // 这是一个async await使用示例
   // 你可以把 ElMessageBox 替换成 axios 请求
-  const handleAsync = async() => {
+  const handleAsync = async () => {
     let whichClose = true
     await ElMessageBox.confirm("这是一个弹框", "提示", {
       confirmButtonText: "确认",

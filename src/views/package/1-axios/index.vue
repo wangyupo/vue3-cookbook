@@ -82,7 +82,7 @@
 
 
   // async await 使用示例
-  // const handleHttpAsync = async() => {
+  // const handleHttpAsync = async () => {
   //   await appContext.config.globalProperties.$axios
   //     .get("/api/dict/word", {
   //       params: {
