@@ -29,7 +29,7 @@ import "./tailwind.css"; // 引入tailwind.css
 import ReferenceLink from "./components/ReferenceLink.vue";
 app.component("ReLink", ReferenceLink);
 
-import axios from "./untils/request";
+import axios from "./utils/request";
 app.config.globalProperties.$axios = axios;
 
 app.use(store);
