@@ -10,7 +10,9 @@
         >
           <p>我通过 teleport 挂载到了 Vue app 之外的其他位置， 可打开 public 文件夹下的 index.html 查看以下元素：</p>
           <p>&lt;div id="fullScreen"&gt;&lt;/div&gt;</p>
-          <p class="italic font-semibold">* 我既剥离了 vue 顶层组件挂载的 DOM 的限制，而且还能使用 vue 组件内的状态。</p>
+          <p class="italic font-semibold">
+            * 我既剥离了 vue 顶层组件挂载的 DOM 的限制，而且还能使用 vue 组件内的状态。
+          </p>
           <el-button class="mt-4" type="primary" @click="visibleFull = !visibleFull">点我关闭</el-button>
         </div>
       </teleport>
@@ -37,9 +39,10 @@
     </div>
   </div>
 
-  <div v-highlight class="mt-8" style="width: 800px">
-    <p class="font-bold">组件代码：</p>
-    <pre>
+  <div class="flex overflow-x-auto">
+    <div v-highlight class="mt-8" style="width: 800px">
+      <p class="font-bold">组件代码：</p>
+      <pre>
             <code>
 &lt;template&gt;
   &lt;teleport to="#fullScreen"&gt;
@@ -64,6 +67,33 @@
 &lt;/script&gt;
             </code>
         </pre>
+    </div>
+
+    <div v-highlight class="mt-8 ml-4" style="width: 800px">
+      <p class="font-bold">index.html代码：</p>
+      <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=""&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;
+    &lt;link rel="icon" href="&lt;%= BASE_URL %&gt;favicon.ico"&gt;
+    &lt;title&gt;&lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;noscript&gt;
+      &lt;strong&gt;浏览器不支持&lt;/strong&gt;
+    &lt;/noscript&gt;
+    &lt;div id="app"&gt;&lt;/div&gt;
+    &lt;!-- 注意 id 为 fullScreen 的 div，teleport 的 to 属性指的就是这儿 --&gt;
+    &lt;div id="fullScreen"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
   </div>
 
   <ReLink :links="links" />
