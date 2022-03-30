@@ -1,6 +1,6 @@
 <template>
   <el-container class="main-container">
-    <el-aside :width="isExpand ? '64px' : '220px'">
+    <el-aside :width="isExpand ? '64px' : '230px'">
       <el-menu
         class="menu"
         router
