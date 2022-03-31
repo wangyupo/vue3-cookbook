@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./src/assets/logo.png" alt="Project logo"></a>
+  <img width=200px height=200px src="./src/assets/logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">《vue3快速学习》</h3>
@@ -16,6 +16,8 @@
 这是一个 vue3 烹饪书，它有直接的示例和代码展示，你可以用它快速入门 vue3 的组合式API。
 
 示例中包含：Composition API（组合式 API）、vuex、vue-router、axios、tailwindcss，及一个单文件组件\<script setup>示例项目。
+
+<img width=600px height=500px src="./src/assets/feature.png" alt="Project logo"></a>
 
 ## 🏁 启动项目 <a name = "getting_started"></a>
 ```
