@@ -17,10 +17,12 @@
         </div>
       </teleport>
       <div
-        class="absolute top-0 right-0 bottom-0 left-0 bg-green-100 flex items-center justify-center"
+        class="absolute top-0 right-0 bottom-0 left-0 bg-green-100 flex items-center justify-center flex-col"
         v-if="visibleCurrent"
       >
-        <el-button type="primary" @click="visibleCurrent = !visibleCurrent">点我关闭</el-button>
+        <p>我仅占据了内容区域</p>
+        <p>我的 dom 在 vue 单文件中</p>
+        <el-button class="mt-4" type="primary" @click="visibleCurrent = !visibleCurrent">点我关闭</el-button>
       </div>
       <el-button type="primary" @click="visibleFull = !visibleFull">全屏弹窗</el-button>
       <el-button type="primary" @click="visibleCurrent = !visibleCurrent">内容区弹窗</el-button>
