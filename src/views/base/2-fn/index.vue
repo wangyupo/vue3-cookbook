@@ -1,6 +1,17 @@
 <template>
   <!-- 2-创建方法 -->
-  <el-button type="primary" @click="handleBtn">点我试试</el-button>
+  <div class="flex justify-between">
+    <el-button type="primary" @click="handleBtn">点我试试</el-button>
+
+    <div class="italic text-sm font-semibold leading-6 mr-8" style="width: 500px">
+      <p>
+        <span class="text-xl">注：</span>
+        当使用 &lt;script setup&gt; 的时候，任何在 &lt;script setup&gt; 声明的顶层的绑定 (包括变量，函数声明，以及
+        <span class="underline">import 引入的内容</span>
+        ) 都能在模板中直接使用。
+      </p>
+    </div>
+  </div>
 
   <div v-highlight class="mt-8" style="width: 660px">
     <p class="font-bold">组件代码：</p>
