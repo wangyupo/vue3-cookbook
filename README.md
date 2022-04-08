@@ -17,7 +17,7 @@
 
 示例中包含：Composition API（组合式 API）、vuex、vue-router、axios、tailwindcss，及一个单文件组件\<script setup>示例项目。
 
-<img width=600px height=500px src="./src/assets/feature.png" alt="Project logo"></a>
+<img width=600px height=500px src="./src/assets/feature.png" alt="Project display"></a>
 
 ## 🏁 启动项目 <a name = "getting_started"></a>
 ```
