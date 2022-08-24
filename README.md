@@ -35,3 +35,5 @@ npm run serve
 本项目仅针对有 vue 使用基础的人员，这些人员可以通过此项目快速、准确的上手 vue3.x 版本的新特性，并把它应用在你的项目中。
 
 **如果！** 你看不懂，又想入门vue，那就去看看这个项目 [vue-vuex-router](https://github.com/wangyupo/vue-vuex-router)，让它带你入门 vue。
+
+这里是 **[vue3.x 官方互动教程](https://cn.vuejs.org/tutorial/#step-1)**，也许你可以跟随这个练习，在网页上练习一些基础内容。
