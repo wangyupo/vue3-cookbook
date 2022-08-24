@@ -50,7 +50,7 @@
       </el-menu>
     </el-aside>
 
-    <el-main class="relative">
+    <el-main class="relative bg-white">
       <router-view />
     </el-main>
   </el-container>
