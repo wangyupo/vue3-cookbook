@@ -1,5 +1,4 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/vue3-cookbook-website/" : "/",
   devServer: {
     open: true,
     host: "localhost",

@@ -44,7 +44,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory('/vue3-cookbook-website/'),
+  history: createWebHashHistory(),
   routes,
 });
 
