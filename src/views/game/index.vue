@@ -8,29 +8,14 @@
 
 <script setup>
 import Map from "./components/GameMap.vue";
-import { ref, onMounted, computed } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
-import { cloneDeep } from "lodash-es";
 
 import { useGameStore } from "@/stores/game.js";
-import { storeToRefs } from "pinia";
 
 const gameStore = useGameStore();
-const { game } = storeToRefs(gameStore);
-
-// import { useStore } from "vuex";
-// const store = useStore();
-
-// const state = computed(() => store.state.game);
-const stateClone = ref();
-
-onMounted(() => {
-  stateClone.value = cloneDeep(game.value);
-});
 
 onBeforeRouteLeave((to, from) => {
-  // store.commit("game/resetAllState", stateClone.value);
-  gameStore.resetAllState(stateClone.value);
+  gameStore.$reset();
 });
 </script>
 

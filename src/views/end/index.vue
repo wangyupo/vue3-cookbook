@@ -6,7 +6,7 @@
   <div class="end">
     <p class="underline underline-offset-8 italic">本项目使用 v3s 进行开发</p>
     <a href="https://github.com/wangyupo/v3s" target="_blank" title="跳转至 v3s github地址">
-      <img src="/public/v3s.jpg" class="mt-3 w-[200px] cursor-pointer" />
+      <img src="/v3s.jpg" class="mt-3 w-[200px] cursor-pointer" />
     </a>
     <p class="mt-3 flex items-baseline">
       * 推荐使用

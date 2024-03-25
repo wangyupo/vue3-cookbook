@@ -58,5 +58,5 @@ export const useGameStore = defineStore("game", {
       Object.assign(data);
     },
   },
-  persist: true, // localstorage yes or no
+  persist: false, // localstorage yes or no
 });

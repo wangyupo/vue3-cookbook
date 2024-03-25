@@ -6,7 +6,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 const PROXY_TARGET = "http://t.weather.itboy.net/"; // 后端服务地址
 
 export default defineConfig({
-  base: "/v3s-admin/",
+  base: "/vue3-cookbook-website/",
   plugins: [
     vue(),
     visualizer({
