@@ -1,0 +1,38 @@
+/* 自定义深色背景颜色 */
+html.dark {
+  --v3s-header-color: var(--el-bg-color-overlay);
+
+  --el-menu-bg-color: var(--el-bg-color-overlay);
+  --el-menu-hover-bg-color: var(--el-fill-color);
+
+  .el-menu-item,
+  .el-sub-menu .el-sub-menu__title,
+  .el-menu--horizontal .el-menu .el-menu-item,
+  .el-menu--horizontal .el-menu .el-sub-menu__title {
+    color: var(--el-text-color-regular);
+  }
+
+  .el-menu-item:hover,
+  .el-sub-menu .el-sub-menu__title:hover,
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+    color: var(--el-text-color-primary);
+    background-color: var(--el-menu-hover-bg-color);
+  }
+
+  .el-menu-item.is-active,
+  .el-menu--horizontal > .el-menu-item.is-active,
+  .el-menu--horizontal .el-menu .el-menu-item.is-active,
+  .el-menu--horizontal .el-menu .el-sub-menu.is-active > .el-sub-menu__title,
+  .el-menu--collapse .el-sub-menu.is-active .el-sub-menu__title,
+  .el-sub-menu.is-active:not(.is-opened) {
+    color: var(--el-text-color-primary) !important;
+    background-color: var(--el-menu-hover-bg-color) !important;
+  }
+  .el-menu--horizontal > .el-sub-menu.is-active .el-sub-menu__title {
+    color: var(--el-text-color-primary);
+  }
+
+  .el-menu--popup-container {
+    background-color: var(--el-bg-color-overlay);
+  }
+}

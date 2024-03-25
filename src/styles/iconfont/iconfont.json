@@ -1,0 +1,65 @@
+{
+  "id": "3986351",
+  "name": "v3s",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39398779",
+      "name": "资源管理",
+      "font_class": "layout-hhdh",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "38045942",
+      "name": "顶部导航",
+      "font_class": "layout-dbdh",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "38045941",
+      "name": "侧边导航",
+      "font_class": "layout-cbdh",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "38045940",
+      "name": "通栏导航",
+      "font_class": "layout-tldh",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "577364",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e751",
+      "unicode_decimal": 59217
+    },
+    {
+      "icon_id": "7155227",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "12084141",
+      "name": "开发组件",
+      "font_class": "kaifazujian",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "29391818",
+      "name": "enter",
+      "font_class": "enter",
+      "unicode": "e95c",
+      "unicode_decimal": 59740
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1",
+    "parentId": "0",
+    "url": "/begin",
+    "title": "从这儿开始",
+    "icon": "",
+    "menuType": 0
+  },
+
+  {
+    "id": "2",
+    "parentId": "0",
+    "url": "",
+    "title": "基础学习",
+    "icon": "",
+    "menuType": 0
+  },
+  {
+    "id": "2-1",
+    "parentId": "2",
+    "url": "/base/1-setup",
+    "title": "1、创建响应值",
+    "menuType": 0
+  },
+  {
+    "id": "2-2",
+    "parentId": "2",
+    "url": "/base/2-fn",
+    "title": "2、创建方法",
+    "menuType": 0
+  },
+  {
+    "id": "2-3",
+    "parentId": "2",
+    "url": "/base/3-changeValue",
+    "title": "3、使用方法赋值",
+    "menuType": 0
+  },
+  {
+    "id": "2-4",
+    "parentId": "2",
+    "url": "/base/4-useComponent",
+    "title": "4、使用组件",
+    "menuType": 0
+  },
+  {
+    "id": "2-5",
+    "parentId": "2",
+    "url": "/base/5-useChildFn",
+    "title": "5、调用子组件方法、值",
+    "menuType": 0
+  },
+  {
+    "id": "2-6",
+    "parentId": "2",
+    "url": "/base/6-props&emit",
+    "title": "6、组件传值&自定义事件",
+    "menuType": 0
+  },
+  {
+    "id": "2-7",
+    "parentId": "2",
+    "url": "/base/7-compositionApi",
+    "title": "7、组合式API生命周期钩子",
+    "menuType": 0
+  },
+  {
+    "id": "2-8",
+    "parentId": "2",
+    "url": "/base/8-computed&watch",
+    "title": "8、响应式计算和侦听",
+    "menuType": 0
+  },
+  {
+    "id": "2-9",
+    "parentId": "2",
+    "url": "/base/9-nextTick",
+    "title": "9、dom更新后操作",
+    "menuType": 0
+  },
+  {
+    "id": "2-10",
+    "parentId": "2",
+    "url": "/base/10-teleport",
+    "title": "10、teleport移动dom",
+    "menuType": 0
+  },
+
+  {
+    "id": "3",
+    "parentId": "0",
+    "url": "",
+    "title": "v3s",
+    "icon": "",
+    "menuType": 0
+  },
+  {
+    "id": "3-1",
+    "parentId": "3",
+    "url": "/v3s/1-what",
+    "title": "1、了解v3s",
+    "menuType": 0
+  },
+  {
+    "id": "3-2",
+    "parentId": "3",
+    "url": "/v3s/2-start",
+    "title": "2、安装和启动v3s",
+    "menuType": 0
+  },
+  {
+    "id": "3-3",
+    "parentId": "3",
+    "url": "/v3s/3-todo",
+    "title": "3、简单上手v3s",
+    "menuType": 0
+  },
+
+  {
+    "id": "4",
+    "parentId": "0",
+    "url": "",
+    "title": "第三方包学习",
+    "icon": "",
+    "menuType": 0
+  },
+  {
+    "id": "4-1",
+    "parentId": "4",
+    "url": "/package/1-axios",
+    "title": "1、使用Axios",
+    "menuType": 0
+  },
+  {
+    "id": "4-2",
+    "parentId": "4",
+    "url": "/package/2-pinia",
+    "title": "2、使用Pinia",
+    "menuType": 0
+  },
+  {
+    "id": "4-4",
+    "parentId": "4",
+    "url": "/package/3-router",
+    "title": "3、使用Router4.x",
+    "menuType": 0
+  },
+  {
+    "id": "4-4",
+    "parentId": "4",
+    "url": "/package/4-tailwindcss",
+    "title": "4、使用Tailwind CSS",
+    "menuType": 0
+  },
+
+  {
+    "id": "5",
+    "parentId": "0",
+    "url": "/game",
+    "title": "做个项目",
+    "icon": "",
+    "menuType": 0
+  },
+  {
+    "id": "6",
+    "parentId": "0",
+    "url": "/end",
+    "title": "在这儿结束",
+    "icon": "",
+    "menuType": 0
+  }
+]

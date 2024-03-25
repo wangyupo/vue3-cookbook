@@ -1,0 +1,43 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ctrl/tinycolor": "^4.0.2",
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.7",
+    "countup.js": "^2.6.0",
+    "echarts": "^5.5.0",
+    "element-plus": "^2.6.2",
+    "highlight.js": "^11.9.0",
+    "js-cookie": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "pinyin": "^3.0.0-alpha.4",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vuedraggable": "^4.1.0",
+    "xlsx-js-style": "^1.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.18",
+    "babel-plugin-import": "^1.13.8",
+    "less": "^4.2.0",
+    "less-loader": "^11.1.4",
+    "postcss": "^8.4.32",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.6",
+    "vue-tsc": "^2.0.6"
+  }
+}
