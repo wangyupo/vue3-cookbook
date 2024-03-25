@@ -1,0 +1,63 @@
+// 专门用来管理 ElementPlus 样式的文件，推荐通过 css变量 来从顶层覆盖其原有样式。
+// 可以从这里看到 ElementPlus 对 css变量 的支持：http://element-plus.org/zh-CN/guide/theming.html#通过-css-变量设置
+:root {
+  --el-menu-bg-color: #324057;
+  --el-menu-border-color: transparent;
+
+  --el-color-primary: #427bff;
+  --el-color-primary-dark-2: #3966d0;
+  --el-color-primary-light-3: #6895ff;
+  --el-color-primary-light-4: #8eb0ff;
+  --el-color-primary-light-5: #a1bdff;
+  --el-color-primary-light-7: #c6d7ff;
+  --el-color-primary-light-9: #ecf2ff;
+}
+
+html {
+  --v3s-header-color: #fff;
+
+  color: var(--el-text-color-primary);
+}
+
+html:not(.dark) {
+  --el-menu-text-color: #ddd;
+  --el-menu-hover-text-color: #fff;
+  --el-menu-active-color: #fff;
+  --el-menu-hover-bg-color: var(--el-color-primary);
+}
+
+.el-menu-item.is-active,
+.el-menu--horizontal .el-menu .el-menu-item.is-active,
+.el-menu--horizontal .el-menu .el-sub-menu.is-active .el-sub-menu__title {
+  background-color: var(--el-menu-hover-bg-color);
+}
+
+.el-sub-menu.is-active:not(.is-opened) {
+  background-color: var(--el-menu-hover-bg-color);
+}
+
+.el-menu--popup-container {
+  background-color: var(--el-menu-bg-color);
+}
+
+.el-button.is-link:focus,
+.el-button.is-link:hover {
+  color: var(--el-color-primary-light-4);
+}
+
+.el-dialog__header {
+  margin-right: 0;
+  border-bottom: 1px solid var(--el-border-color-light);
+}
+
+.el-dialog__body {
+  padding: 16px 0;
+}
+
+.el-dialog__footer {
+  border-top: 1px solid var(--el-border-color-light);
+}
+
+.el-drawer__header {
+  margin-bottom: 12px;
+}

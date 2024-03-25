@@ -1,0 +1,11 @@
+// 能影响全局样式的文件。如果你想单独设置某个样式，并使其全局生效（这通常
+// 是在需要hack的情况下），就应该在这个文件内统一管理，并使其生效。
+
+#nprogress .bar {
+  // background-color: var(--el-color-primary-light-3);
+  background-color: #409eff;
+}
+
+html.gray {
+  filter: grayscale(100%);
+}

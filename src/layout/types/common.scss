@@ -1,0 +1,110 @@
+// layout 共用样式
+$headerHeight: 48px; // Header高度
+$breadHeight: 40px; // 面包屑高度
+$menuFoldWidth: 64px; // 菜单宽度-折叠后
+$menuExpandWidth: 240px; // 菜单宽度-展开后
+$menuTranstionDuration: 200ms; // 菜单展开/折叠动画时长
+
+.layout {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    background-color: var(--v3s-header-color);
+    &.mix,
+    &.horizontal {
+      .el-dropdown {
+        color: #fff;
+      }
+      color: #fff;
+      background-color: var(--el-menu-bg-color);
+    }
+    // &.dark {
+    //   background-color: var(--el-bg-color-overlay);
+    // }
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      padding: 0 18px;
+      color: var(--el-text-color-primary);
+      font-size: 18px;
+      font-weight: bold;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: $menuTranstionDuration;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      &.dark {
+        color: var(--el-text-color-primary);
+      }
+      &.fold {
+        width: $menuFoldWidth;
+      }
+      &.expand {
+        width: $menuExpandWidth;
+      }
+    }
+  }
+
+  &-aside {
+    overflow: hidden;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: $menuTranstionDuration;
+    background-color: var(--el-menu-bg-color);
+    &.dark {
+      border-right: 1px solid var(--el-border-color);
+      background-color: var(--el-bg-color-overlay);
+    }
+    &.fold {
+      width: $menuFoldWidth;
+    }
+    &.expand {
+      width: $menuExpandWidth;
+    }
+    &-menu {
+      &.sideMenu {
+        height: calc(100% - $headerHeight);
+      }
+      &.classic {
+        height: 100%;
+      }
+      overflow: auto;
+      scrollbar-width: thin;
+    }
+  }
+
+  &-main {
+    height: calc(100% - $headerHeight);
+    background-color: var(--el-bg-color-page);
+    &-content {
+      position: relative;
+      padding: 12px;
+      background-color: var(--el-bg-color-page);
+      border-radius: 4px;
+      overflow-x: hidden;
+      &.transparent {
+        background-color: var(--el-bg-color-page);
+        .main-wrapper {
+          padding: 0;
+          background-color: var(--el-bg-color-page);
+        }
+      }
+      .main-wrapper {
+        padding: 12px;
+        background-color: var(--el-bg-color-overlay);
+        border-radius: 4px;
+      }
+    }
+  }
+}
