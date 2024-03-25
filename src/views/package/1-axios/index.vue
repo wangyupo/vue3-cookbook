@@ -86,21 +86,41 @@ import { ref } from "vue";
 
 const loading = ref(false);
 const weatherData = ref({});
+const mockData = {
+  date: "25",
+  high: "高温 16℃",
+  low: "低温 5℃",
+  ymd: "2024-03-25",
+  week: "星期一",
+  sunrise: "06:08",
+  sunset: "18:31",
+  aqi: 61,
+  fx: "南风",
+  fl: "2级",
+  type: "多云",
+  notice: "阴晴之间，谨防紫外线侵扰",
+};
 
 // 获取天气
 const fn_getWeather = () => {
   loading.value = true;
-  const params = { code: 101010100 };
-  getWeather(params)
-    .then(res => {
-      if (res.status == 200) {
-        weatherData.value = res.data.forecast[0];
-      }
-    })
-    .catch(() => {})
-    .finally(() => {
-      loading.value = false;
-    });
+  // 为了演示添加，自己本地跑代码，注释掉 setTimeout 这部分代码，使用下面的 api 服务请求。
+  setTimeout(() => {
+    weatherData.value = mockData;
+    loading.value = false;
+  }, 2000);
+  // 本地服务请打开下面的注释
+  // const params = { code: 101010100 };
+  // getWeather(params)
+  //   .then(res => {
+  //     if (res.status == 200) {
+  //       weatherData.value = res.data.forecast[0];
+  //     }
+  //   })
+  //   .catch(() => {})
+  //   .finally(() => {
+  //     loading.value = false;
+  //   });
 };
 
 const links = [
