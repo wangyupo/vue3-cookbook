@@ -29,7 +29,7 @@ npm run dev
       <p class="mt-1 indent-8">
         1、在浏览器地址栏，输入：
         <span class="underline underline-offset-4">http://localhost:5173/v3s-admin/</span>
-        ，返回按回车。
+        ，然后按回车。
       </p>
       <p class="mt-1 indent-8">
         2、执行完 npm run dev 后，停留在你的命令行工具中，输入字母 o ，然后回车，浏览器会自动打开
