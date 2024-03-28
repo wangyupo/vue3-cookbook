@@ -1,9 +1,9 @@
 <template>
   <!-- 2、安装和启动 -->
   <div>
-    <p>
+    <p class="flex items-baseline">
       一、使用 git 下载 v3s，这是下载地址：
-      <el-link type="primary" href="https://github.com/wangyupo/v3s" target="_blank">
+      <el-link type="primary" href="https://github.com/wangyupo/v3s" target="_blank" class="text-lg">
         https://github.com/wangyupo/v3s
       </el-link>
     </p>
@@ -25,17 +25,27 @@ npm run dev
     </div>
 
     <div>
-      <p>三、在浏览器种，有两种启动方式：</p>
-      <p class="indent-8">1、在浏览器地址栏，输入：http://localhost:5173/v3s-admin/，返回按回车。</p>
-      <p class="indent-8">
+      <p>三、在浏览器中，有两种启动方式：</p>
+      <p class="mt-1 indent-8">
+        1、在浏览器地址栏，输入：
+        <span class="underline underline-offset-4">http://localhost:5173/v3s-admin/</span>
+        ，返回按回车。
+      </p>
+      <p class="mt-1 indent-8">
         2、执行完 npm run dev 后，停留在你的命令行工具中，输入字母 o ，然后回车，浏览器会自动打开
-        http://localhost:5173/v3s-admin/。
+        <span class="underline underline-offset-4">http://localhost:5173/v3s-admin/</span>
+        。
       </p>
     </div>
 
     <p class="mt-3">
-      四、使用 vsCode 打开 v3s 目录。使用组合按键 Ctrl + Shift + X 唤醒 “扩展”，在 “扩展” 中搜索 “V3S
-      Snippets”，选中，在左侧工作区弹出的窗口中，点击 “安装”。
+      四、使用 vsCode 打开 v3s 目录。使用组合按键
+      <span class="underline underline-offset-4">Ctrl + Shift + X</span>
+      唤醒 “扩展”，在 “扩展” 中搜索
+      <span class="underline underline-offset-4">V3S Snippets</span>
+      ，选中，在左侧工作区弹出的窗口中，点击
+      <span class="underline underline-offset-4">安装</span>
+      。
     </p>
 
     <p class="mt-3">五、至此，关于 v3s 的安装和启动工作就都完成了。</p>
