@@ -8,7 +8,7 @@
     <a href="https://github.com/wangyupo/v3s" target="_blank" title="跳转至 v3s github地址">
       <img src="/v3s.jpg" class="mt-3 w-[200px] cursor-pointer" />
     </a>
-    <p class="mt-3 flex items-baseline">
+    <p class="mt-3 flex items-baseline text-nowrap">
       * 推荐使用
       <el-link type="primary" class="mx-2 font-bold text-lg" href="https://github.com/wangyupo/v3s" target="_blank">
         v3s
