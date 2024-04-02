@@ -3,7 +3,7 @@
   <div class="flex justify-between">
     <div>
       <div class="flex">
-        <span style="flex: 0 0 80px;" @click="dd">我的国籍：</span>
+        <span style="flex: 0 0 80px" @click="dd">我的国籍：</span>
         <el-input v-model="inputValue" placeholder="请输入" maxlength="20" />
       </div>
       <div class="mt-4">响应的值：{{ inputValue }}</div>
@@ -13,7 +13,7 @@
       <p>
         <span class="text-xl">注：</span>
         vue3 中，对象、数组的更新不再需要 $set（且已被
-        <a class="text-blue-600" href="https://v3.cn.vuejs.org/guide/migration/introduction.html#被移除的-api">移除</a>
+        <a class="text-blue-600" href="https://v3-migration.vuejs.org/zh/breaking-changes/#被移除的-api">移除</a>
         ），只需要用 ref、reactive 声明对象、数组即可实现实时响应，如 const obj = reactive({ a: 1 })，你可以直接使用
         obj.b = 2，即可更新数据，并实时响应。这与 vue3 的 proxy 实现原理有关。
       </p>
